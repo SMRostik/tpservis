@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>TITLE</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--.header-->
+            <div class="header">
+                <!--#top-menu-->
+                <nav id="top-menu" class="navbar navbar-default" style="margin:0">
+                    <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="img/logo.png">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="main nav navbar-nav">
+                            <li class="active"><a href="#">Главная<span class="sr-only">(current)</span></a></li><!--
+                            --><li><a href="#">Контакты</a></li><!--
+                            --><li><a href="#">О нас</a></li>
+                            <li><a href="#">Горящие туры</a></li><!--
+                            --></ul>
+                        <ul class="tel nav navbar-nav navbar-right">
+                            <li><a href="tel:+380950327662">+38 (095) 032 76 62</a></li>
+                            <li><a href="tel:+380681299177">+38 (068) 129 91 77</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <!--/#top-menu-->
+                
+                <div class="container">
+                    <div class="header-body row">
+                        <ul class="header-inf">
+                            <li><span>Туры по Украине</span></li>
+                            <li><span>Туры по Европе</span></li>
+                            <li><span>Лечение за границей</span></li>
+                            <li><span>Визы</span></li>
+                        </ul>
+                        <img src="img/headerImgBg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--/.header-->
+            
+            <!--.content-->
+            <div class="content">
+                <div class="blog container">
+                    <div class="row">
+                        <div class="blog-item col-xs-12">
+                            <div class="item-title">
+                                <a href=""><h2>Title</h2></a>
+                            </div>
+                            <div class="item-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed dignissimos quasi ab eaque distinctio optio aut nulla iusto! Saepe assumenda labore necessitatibus aperiam! A fuga corporis sit ipsa voluptatum!</p>
+                            </div>
+                        </div>
+                        <div class="blog-item col-xs-12">
+                            <div class="item-title">
+                                <h2>Title</h2>
+                            </div>
+                            <div class="item-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed dignissimos quasi ab eaque distinctio optio aut nulla iusto! Saepe assumenda labore necessitatibus aperiam! A fuga corporis sit ipsa voluptatum!</p>
+                            </div>
+                        </div>
+                        <div class="blog-item col-xs-12">
+                            <div class="item-title">
+                                <h2>Title</h2>
+                            </div>
+                            <div class="item-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed dignissimos quasi ab eaque distinctio optio aut nulla iusto! Saepe assumenda labore necessitatibus aperiam! A fuga corporis sit ipsa voluptatum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!--/.content-->
+            
+            <!--.footer-->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-row row">
+                        <div class="footer-body col-xs-12">
+                            <span>&copy Copyright 2016. Туры, визы, авиабилеты. Медицинский туризм, лечение в Германии</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.footer-->
+        
+        </div>
+        
+                        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script> 
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    margin:15,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        768:{
+                            items:2
+                        },
+                        992:{
+                            items:3
+                        }
+                    }
+                })
+            });
+        </script> 
+  
+    </body>
+</html>

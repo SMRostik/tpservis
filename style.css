@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Roboto'; 
+    src: url(font/Roboto.ttf); 
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    font-family: "Roboto";
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-body{
+    position: relative;
+}
+.header-body > img{
+    width: 100%;
+}
+
+#top-menu{
+    margin-bottom: 0;
+    border-radius: 0;
+    background: rgba(26, 26, 26, 0.8);
+    border: 0;
+    color: #d7d7d7;
+    position: static;
+
+}
+#top-menu a{
+    color: #fff;
+}
+#top-menu a:hover{
+    color: #999;
+}
+#top-menu .active a{
+    background: #fff;
+    color: #000;
+}
+.header-body{
+    position: relative;
+}
+.header-inf{
+    display: none;
+}
+
+.content{
+    flex: 1 0 auto;
+    padding-bottom: 30px;
+}
+
+.carousel-title{
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.carousel-title > span{
+    font-size: 2.45em;
+    text-transform: uppercase;
+}
+.carousel-body > .owl-carousel{
+    text-align: center;
+}
+.footer{
+    background: #b1e001;
+    flex: 0 0 auto;
+}
+.footer-body{
+    display: table;
+    width: 100%;
+    height: 90px;
+    min-height: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-body > span{
+    display: table-cell;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    border: 2px solid #b1e001;
+    height: 11px;
+    width: 30px;
+    border-radius: 0;
+    background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #00aecf;
+}
+.container-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.container-content > div{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: #fff;
+    text-align: left;
+}
+.str-one{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.str-name{
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+.container-content:hover{
+    background: rgba(0, 0, 0, 0.47);
+}
+#hot-tours{
+    text-align: center;
+}
+#hot-tours .item {
+    position: relative;
+    max-width: 380px;
+    display: inline-block;
+}
+#hot-tours .item img{
+    background: #000;
+}
+.butt{
+    display: block;
+    padding: 5px 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    border: 2px solid #b1e001;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+}
+.butt:hover{
+    text-decoration: none;
+    background: #b1e001;
+    color: #fff;
+}
+/*page.html*/
+.item-title{
+    text-align: center;
+}
+.item-title h2{
+    display: inline-block;
+}
+.item-title a{
+    text-decoration: none;
+    color: #333;
+}
+.item-title a:hover{
+    color: #000;
+}
+.blog-item{
+    margin-top: 15px;
+    background: #dbdbdb;
+    word-wrap: break-word;
+}
+.item-body{
+    font-size: 1em;
+}
+
+
+@media (min-width: 480px){
+    .carousel-title > span::after,
+    .carousel-title > span::before{
+        content: " ";
+        display: inline-block;
+        background: url(img/TitleLine.gif);
+        width: 15%;
+        position: relative;
+        top: -10px;
+        height: 1px;
+    }
+    .carousel-title > span::before{
+        left: -15px;
+    }
+    .carousel-title > span::after{
+        right: -15px;
+    }
+}
+@media (max-width: 300px){
+    .carousel-title > span{
+        font-size: 2em;
+    }
+    .container-content span{
+        font-size: 70%;
+    }
+    .str-name{
+        padding: 0;
+        margin-top: -35px;
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 767px){
+    .tel li a{
+        padding: 0;
+        padding-left: 5px;
+    }
+}
+@media (min-width: 768px){
+    #top-menu{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        line-height: 0;
+    }
+    .navbar-brand{
+        padding-top: 12px;
+    }
+    #top-menu > .container{
+        position: relative;
+        padding-right:100px
+    }
+    .main{
+        display: inline-block;
+        float: none;
+    }
+    .collapse.navbar-collapse{
+        text-align: center;
+    }
+    .tel{
+        margin-top: 5px;
+        position: absolute;
+        right:30px;
+        top:0;
+        display: inline-block;
+    }
+    .tel li{
+        display: block;
+        float: none;
+    }
+    .tel li a{
+        display: inline;
+        padding: 0;
+    }
+    .header-inf{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        font-size: 1.5em;
+        color: #fff;
+        list-style: none;
+    }
+    .header-inf li{
+        margin-top: -5px;
+    }
+    .header-inf li:before{
+        content: url(img/333.png);
+        position: relative;
+        top: 7px;
+        right: 5px;
+    }
+    
+    .blog{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 992px){
+    #top-menu .main a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar-brand{
+        padding-top: 17px;
+    }
+    .tel{
+        margin-top: 10px;
+    }
+    .header-inf{
+        left: 50%;
+        top: 20%;
+        font-size: 2em;
+    }
+    .header-inf li:before{
+        top: 5px;
+    }
+    .header-inf li{
+        margin-top: 0;
+    }
+}
